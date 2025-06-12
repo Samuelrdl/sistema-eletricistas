@@ -1,11 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Teste do Sistema</title>
+  <title>Sistema de Gerenciamento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .vehicle-checklist {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      max-width: 800px;
+      margin: auto;
+    }
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 10px;
+    }
+    .checklist-item span {
+      flex: 1;
+    }
+    select, input[type="text"], button {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .upload-btn {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h1>✅ Site funcionando!</h1>
-  <p>Este é um teste. Agora o GitHub Pages está ativo.</p>
+  <div class="vehicle-checklist">
+    <h2>Checklist Diário - VAN-001</h2>
+    <div class="checklist-item">
+      <span>1. Pneus (calibragem/desgaste)</span>
+      <select class="condition-out">
+        <option value="C">Conforme</option>
+        <option value="NC">Não Conforme</option>
+      </select>
+      <select class="condition-in">
+        <option value="C">Conforme</option>
+        <option value="NC">Não Conforme</option>
+      </select>
+      <input type="text" placeholder="Observações">
+      <button class="upload-btn">📷 Foto</button>
+    </div>
+    <div class="checklist-item">
+      <span>2. Luzes e sinalização</span>
+      <select class="condition-out">
+        <option value="C">Conforme</option>
+        <option value="NC">Não Conforme</option>
+      </select>
+      <select class="condition-in">
+        <option value="C">Conforme</option>
+        <option value="NC">Não Conforme</option>
+      </select>
+      <input type="text" placeholder="Observações">
+      <button class="upload-btn">📷 Foto</button>
+    </div>
+  </div>
 </body>
 </html>
